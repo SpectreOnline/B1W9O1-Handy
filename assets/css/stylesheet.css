@@ -1,0 +1,50 @@
+html{
+width: 1000px;
+}
+
+body{
+    margin: 0 auto;
+    font-family: 'Archivo', sans-serif;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 1000px;
+    height: 100%;
+}
+
+.grid-item1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    
+}
+
+.grid-container{
+    display: grid;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+    margin-top: 5%;
+    grid-column-gap: 20px;
+    grid-template-columns: 35% 30% 35%;
+    grid-row-gap: 50px;
+    grid-template-rows: 40% 40% 15%;
+}
+
+.header{
+    width: 100%;
+}
+
+.grid-item2{
+    padding-left: 15%;
+}
+
+.grid-item5{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: yellow;
+}
