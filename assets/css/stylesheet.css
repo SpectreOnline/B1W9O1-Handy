@@ -1,6 +1,4 @@
-html{
-width: 1000px;
-}
+
 
 body{
     margin: 0 auto;
@@ -9,22 +7,63 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    width: 1000px;
     height: 100%;
 }
 
-.grid-item1{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    
-}
-
-.grid-container{
-    display: grid;
+.logo{
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    margin-top: 1%;
+    margin-left: 20%;
+}
+
+.topmenu{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 950px;
+    height: 6%;
+    background-color: black;
+    margin-left: 20%;
+    margin-top: 3.5%;
+    z-index: 1;
+}
+
+.topmenu-content{
+    margin-top: 2%;
+    margin-left: 2%;
+    color: white;
+
+}
+
+.grid-item1{
+    grid-column-start: 1;
+    grid-column-end: 4; 
+}
+
+.header{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    position: relative;
+    margin-top: 5%;
+}
+
+.grid-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
     margin: 0 auto;
     width: 1000px;
     height: 100%;
@@ -32,19 +71,173 @@ body{
     grid-column-gap: 20px;
     grid-template-columns: 35% 30% 35%;
     grid-row-gap: 50px;
-    grid-template-rows: 40% 40% 15%;
+    grid-template-rows: 65% 30% 25% 20% 25% 5%;
+    z-index: -1;
 }
 
-.header{
-    width: 100%;
+.banners {
+    align-items: center;
+    margin-top: 3.5%;
+    display: grid;
+    grid-template-rows: 220px;
+    grid-template-columns: 35% 30% 35%;
 }
 
-.grid-item2{
-    padding-left: 15%;
+.banners .container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 220px;
+}
+
+.banners .container img {
+    display: block;
+    width: 300px;
+    height: 220px;
+}
+
+.banners .overlay {
+    position: absolute;
+    top: 0;
+    height: 220px;
+    width: 300px;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(34,41,49,0.8);
+}
+
+.banners .banner1:hover .overlay, .banner2:hover .overlay, .banner3:hover .overlay {
+    opacity: 1;
+  }
+
+.banners .container .overlay .text {
+    font-size: 32px;
+    position: absolute;
+    font-weight: 600;
+    /* width: 100%;
+    height: 100%; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    opacity: 1;
+    text-align: center;
 }
 
 .grid-item5{
     grid-column-start: 1;
     grid-column-end: 4;
-    background-color: yellow;
 }
+
+
+.ribbon{
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 55%;   
+    background-color: #ffe718;
+    height: 15%;
+    align-items: center;
+    justify-content: center;
+}
+
+.ribbontext{
+width: 1000px;
+margin: auto;
+}
+
+.groot{
+    font-size: 24px;
+}
+
+.klein{
+    font-size: 12px;
+    margin-left: 2%;
+}
+
+.btn {
+    background-color: #ffffff;
+    float: right;
+    height: 40px;
+    width: 200px;
+    border: none;
+    z-index: 1;
+}
+ 
+.btn a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    line-height: 8px;
+    font-weight: 500;
+    z-index: 1;
+
+}
+
+.btn a:hover {
+    background: #222931;
+    height: 40px;
+    width: 200px;
+    color: #ffffff;
+    z-index: 1;
+
+}
+
+.btn:hover{
+    background-color: #222931;
+    height: 40px;
+    width: 200px;
+    z-index: 1;
+
+}
+
+
+
+.grid-item6{
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+
+.footer{
+    margin-top: 15%;
+    width: 100%;
+}
+
+.grid-item7{
+    margin-left: 7%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.overons{
+    width: 350px;
+}
+
+.grid-item8{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.overons{
+    font-size: 12px;
+}
+
+.overonstitle{
+    font-size: 24px;
+}
+
+.bottombar{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 5%;
+    background-color: black;
+    margin: 0;
+    margin-top: 20%;
+}
+
